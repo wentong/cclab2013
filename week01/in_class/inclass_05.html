@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>in class</title>
+	</head>
+
+	<body>
+		<div id="results"> results </div>
+		<div id="data"> data, this is inside the div called data. </div>
+		<div id="favoriteColorDiv"> anotherDiv </div>
+
+		<form id="input">
+			write a noun: <input type="text" name="noun1"><br>
+			write a verb: <input type="text" name="verb1"><br>
+			write an adj: <input type="text" name="adj1">
+		</form>
+
+		<input type="button" value="Submit" onclick="go();">
+
+		<script type= "text/javascript">
+			function go(){
+
+				console.log("GO!!!!");
+
+				var receivedNoun1 = document.getElementById("input").noun1.value;
+				var receivedVerb1 = document.getElementById("input").verb1.value;
+				var receivedAdj1 = document.getElementById("input").adj1.value;
+
+				console.log("noun: "+receivedNoun1);
+				console.log("verb: "+receivedVerb1);
+				console.log("adj: "+receivedAdj1);
+			}
+
+		</script>
+
+	</body>
+</html>
